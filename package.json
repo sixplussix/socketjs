@@ -1,12 +1,11 @@
 {
-  "name": "rollup-starter-project",
+  "name": "node-socket",
   "version": "1.0.0",
   "description": "Sample project for packages built with rollup.",
-  "main": "dist/rollup-starter-project.js",
-  "module": "dist/rollup-starter-project.mjs",
-  "jsnext:main": "dist/rollup-starter-project.mjs",
+  "main": "dist/socket.js",
+  "module": "dist/socket.mjs",
+  "jsnext:main": "dist/socket.mjs",
   "scripts": {
-    "prebuild": "eslint lib test",
     "build": "rollup -c --environment BUILD:production",
     "watch": "rollup -c -w",
     "pretest": "rollup -c",
@@ -31,7 +30,10 @@
     "dist"
   ],
   "homepage": "https://github.com/rollup/rollup-starter-project#readme",
-  "dependencies": {},
+  "dependencies": {
+    "faye-websocket": "^0.11.1",
+    "uuid": "^3.1.0"
+  },
   "devDependencies": {
     "babel-eslint": "^7.1.1",
     "babel-plugin-external-helpers": "^6.18.0",
