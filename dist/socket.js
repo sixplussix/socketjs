@@ -203,11 +203,7 @@ function timeout_chain(arr) {
 }
 
 function objectExtend(dst, src) {
-  for (var k in src) {
-    if (src.hasOwnProperty(k)) {
-      dst[k] = src[k];
-    }
-  }
+  Object.assign(dst, src);
   return dst;
 }
 

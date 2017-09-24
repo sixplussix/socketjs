@@ -7,9 +7,7 @@ var sockjs_opts = {sockjs_url: "http://cdn.jsdelivr.net/sockjs/1.0.1/sockjs.min.
 
 var sockjs_echo = sockjs.createServer(sockjs_opts);
 sockjs_echo.on('connection', function(conn) {
-    console.log('fdsofjo')
     conn.on('data', function(message) {
-        console.log(conn)
         conn.write(message);
     });
 });

@@ -8,9 +8,7 @@
   "scripts": {
     "build": "rollup -c --environment BUILD:production",
     "watch": "rollup -c -w",
-    "pretest": "rollup -c",
-    "test": "mocha",
-    "prepublish": "npm test"
+    "pretest": "rollup -c"
   },
   "repository": "rollup/rollup-starter-project",
   "keywords": [
